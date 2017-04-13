@@ -47,8 +47,18 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
+#production:
+#  <<: *default
+#  database: message-board_production
+#  username: message-board
+#  password: <%= ENV['MESSAGE-BOARD_DATABASE_PASSWORD'] %>
+
+# 2017年04月14日
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: message-board_production
   username: message-board
   password: <%= ENV['MESSAGE-BOARD_DATABASE_PASSWORD'] %>
