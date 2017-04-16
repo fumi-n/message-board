@@ -1,24 +1,14 @@
-# README
+#commnds
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##git 
 
-Things you may want to cover:
+git add -A && git commit -a -m 'commits' && git diff --name-only HEAD^
 
-* Ruby version
+git diff --name-only HEAD^ && git diff HEAD^
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+##rails s
 
-* Database initialization
+rails s -b $IP -p $PORT
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
