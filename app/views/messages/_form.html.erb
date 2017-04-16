@@ -1,4 +1,4 @@
-<%= form_for(@message) do |f| %>
+<%= form_for(message) do |f| %>
   <% if message.errors.any? %>
     <div id="error_explanation">
       <ul>
@@ -9,7 +9,10 @@
     </div>
   <% end %>
 
-  <%= f.label :content, 'めっせーじ' %>
+  <%= f.label :title, 'タイトル' %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content, 'メッセージ' %>
   <%= f.text_field :content %>
 
   <%= f.submit '投稿' %>
